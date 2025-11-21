@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/maersk-highlight-app/static/css/main.52145409.css",
+    "main.js": "/maersk-highlight-app/static/js/main.ab42ee24.js",
+    "index.html": "/maersk-highlight-app/index.html",
+    "main.52145409.css.map": "/maersk-highlight-app/static/css/main.52145409.css.map",
+    "main.ab42ee24.js.map": "/maersk-highlight-app/static/js/main.ab42ee24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52145409.css",
+    "static/js/main.ab42ee24.js"
+  ]
+}
