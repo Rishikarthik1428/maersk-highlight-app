@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Maersk Q2 2025 Financial Analysis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive React web application for analyzing Maersk's Q2 2025 financial results with citation highlighting functionality.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+- **Split-screen Layout**: PDF-style financial statements on the left, analysis panel on the right
+- **Interactive Citations**: Click on reference numbers [1], [2], [3] to navigate to relevant sections
+- **Smart Highlighting**: Automatic highlighting of "Gain on sale of non-current assets, etc" when clicking [3]
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Smooth Animations**: Elegant highlighting with auto-fade effects
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**[View Live Application](https://rishikarthik1428.github.io/maersk-highlight-app/)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📋 Project Overview
 
-### `npm test`
+This application recreates the financial analysis interface from the Maersk case study, featuring:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Left Panel**: Condensed income statement and financial data from Maersk's Q2 2025 report
+- **Right Panel**: Detailed analysis with interactive citations
+- **Highlight Functionality**: Clicking citation [3] highlights the relevant financial line item
 
-### `npm run build`
+## 🛠️ Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React 18.2.0
+- **Build Tool**: Create React App
+- **Deployment**: GitHub Pages
+- **Styling**: CSS3 with modern flexbox layout
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+maersk-highlight-app/
+├── public/
+│   ├── index.html
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── PdfViewer.js          # Financial statement display
+│   │   └── AnalysisPanel.js      # Analysis with interactive citations
+│   ├── data/
+│   │   └── maerskData.js         # Financial data and configurations
+│   ├── styles/
+│   │   └── App.css              # Main styling
+│   ├── App.js                   # Root component
+│   └── index.js                 # Application entry point
+├── package.json
+└── README.md
+```
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Rishikarthik1428/maersk-highlight-app.git
+   cd maersk-highlight-app
+   ```
 
-## Learn More
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Run the development server**
+   ```bash
+   npm start
+   ```
+   The app will open at [http://localhost:3000](http://localhost:3000)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-### Code Splitting
+The live application is available at:  
+[https://rishikarthik1428.github.io/maersk-highlight-app](https://rishikarthik1428.github.io/maersk-highlight-app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔧 Available Scripts
 
-### Analyzing the Bundle Size
+- `npm start` - Runs development server
+- `npm run build` - Creates production build
+- `npm test` - Runs test suite
+- `npm run deploy` - Deploys to GitHub Pages
+- `npm run predeploy` - Automatic pre-deployment build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📝 Case Study Objective
 
-### Making a Progressive Web App
+This application fulfills the case study requirement:
+> "On click of [3] the 'Gain on sale of non-current assets, etc' in the PDF should get highlighted in yellow color"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is created for educational and demonstration purposes as part of a case study.
