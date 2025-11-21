@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import PdfViewer from './components/PdfViewer';
+import AnalysisPanel from './components/AnalysisPanel';
+import './index.css';
 
 function App() {
+  const [highlightTarget, setHighlightTarget] = useState(null);
+
+  const handleCitationClick = (citationNumber) => {
+    if (citationNumber === 3) {
+      setHighlightTarget('gain-on-sale');
+      
+      // Auto-clear highlight after 3 seconds
+      setTimeout(() => {
+        setHighlightTarget(null);
+      }, 3000);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app-container">
+        <div className="pdf-section">
+          <PdfViewer highlightTarget={highlightTarget} />
+        </div>
+        <div className="analysis-section">
+          <AnalysisPanel onCitationClick={handleCitationClick} />
+        </div>
+      </div>
     </div>
   );
 }
